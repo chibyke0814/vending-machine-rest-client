@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Vending Machine</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="text-center" style="margin-top: 30px">Vending Machine</h1>
+    <hr style="margin-bottom: 30px">
+    <!-- SNACKS -->
+    <div id="snackColumn" class="col-sm-9"></div>
+    <!-- FORMS -->
+    <div class="col-sm-3">
+      <div class="row">
+        <h3 class="text-center">Total $ In</h3>
+        <form>
+          <div class="form-group">
+            <input class="form-control" id="balance" type="text" value="0.00" disabled>
+          </div>
+        </form>
+        <div class="text-center">
+          <button id="addDollarBtn" class="btn btn-default" type="button">Add Dollar</button>
+          <button id="addQuarterBtn" class="btn btn-default" type="button">Add Quarter</button>
+        </div>
+        <div class="text-center">
+          <button id="addDimeBtn" class="btn btn-default" type="button">Add Dime</button>
+          <button id="addNickelBtn" class="btn btn-default" type="button">Add Nickel</button>
+        </div>
+        <hr>
+      </div>
+      <div class="row">
+        <h3 class="text-center">Messages</h3>
+        <form>
+          <div class="form-group">
+            <input id="message" class="form-control" disabled></input>
+          </div>
+          <div class="form-group">
+            <h3 style="display:inline">Item: </h3>
+            <input id="itemNum" class="form-control" type="text" style="width:75%;display:inline" disabled>
+          </div>
+        </form>
+        <button id="makePurchaseBtn" class="btn btn-default btn-block" type="button">Make Purchase</button>
+        <hr>
+      </div>
+      <div class="row" style="margin-bottom: 30px">
+        <h3 class="text-center">Change</h3>
+        <form>
+          <div class="form-group">
+            <textarea id="changeMsg" class="form-control" row="2" disabled></textarea>
+          </div>
+        </form>
+        <button id="changeBtn" class="btn btn-default btn-block" type="button">Change Return</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/vendingMachine.js"></script>
+</body>
+</html>
