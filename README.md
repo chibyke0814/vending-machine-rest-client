@@ -1,2 +1,2 @@
 # vending-machine-rest-client
-See index.html and vendingMachine.js for my code (emphasis on JavaScript / jQuery / AJAX / Bootstrap / HTML)
+JavaScript web application that simulates a vending machine. See index.html and vendingMachine.js for my code. Project uses JavaScript, jQuery, AJAX, Bootstrap, HTML, and CSS.
